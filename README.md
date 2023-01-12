@@ -18,7 +18,7 @@ public class JvmComprehension { // 0
 }
 ```
 
-Комментарии:
+Комментарии:  
 0 - Application ClassLoader загружает класс JvmComprehension  
 1 - main() попадает в стек  
 2 - в стеке создается перемпенная i типа int и инициализируется 1  
