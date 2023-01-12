@@ -1,8 +1,7 @@
 * добавила еще три номера строк - 0, 1, 6
 
 
-public class JvmComprehension { // 0
-
+    public class JvmComprehension { // 0
     public static void main(String[] args) { // 1
         int i = 1;                      // 2
         Object o = new Object();        // 3
@@ -14,8 +13,7 @@ public class JvmComprehension { // 0
     private static void printAll(Object o, int i, Integer ii) { // 6
         Integer uselessVar = 700;                   // 7
         System.out.println(o.toString() + i + ii);  // 8
-    }
-}
+    }}
 
 Комментарии:
 0 - Application ClassLoader загружает класс JvmComprehension
