@@ -1,4 +1,8 @@
-* добавила еще три номера строк - 0, 1, 6
+## The purpose of the task
+
+The purpose of the task is to describe each line in terms of what is happening in the JVM, mentioning the following:
+- ClassLoaders,
+- memory areas (stack, hip)
 
 ```java
 public class JvmComprehension { // 0
@@ -18,17 +22,15 @@ public class JvmComprehension { // 0
 }
 ```
 
-Комментарии:  
-0 - Application ClassLoader загружает класс JvmComprehension  
-1 - main() попадает в стек  
-2 - в стеке создается перемпенная i типа int и инициализируется 1  
-3 - Bootstrap ClassLoader загружает класс Object; в куче создан объект Object; в стеке создана переменная о типа Object
-и ей присвоена ссылка на объект Object в куче  
-4 - Bootstrap ClassLoader загружает класс Integer; в куче создан объект Integer со значением 2; в стеке создана переменная ii типа Integer
-и ей присвоена ссылка на объект Integer в куче  
-5 - printAll() попадает в стек  
-6 - в стеке созданы переменные o типа Object, i типа int, ii типа Integer  
-7 - в куче создан объект Integer со значением 700; в стеке создана переменная uselessVar типа Integer
-и ей присвоена ссылка на объект Integer в куче  
-8 - Bootstrap ClassLoader загружает класс System, toString() попадает в стек, println() попадает в стек  
-9 - Bootstrap ClassLoader загружает класс String, в куче создан объект String со значением finished, println() попадает в стек  
+Comments:  
+0. Application ClassLoader loads the JvmComprehension class
+1. main() appears on the stack
+2. valiable i of int type is created on the stack and is initialized to 1
+3. Bootstrap ClassLoader loads Object class; object Object is created on the heap; variable o of Object type is created on the stack
+and assigned a reference to Object object on the heap
+4. Bootstrap ClassLoader loads Integer class; object Integer with value 2 is created on the heap; variable ii of Integer type is created on the stack and assigned a reference to Integet object on the heap
+5. printAll() appears on the stack
+6.variables o of Object type, i of int type and ii of Integer type are created on the stack
+7.Integer object with value 700 is created on the heep; uselessVar of Integer type is created on the stack and assigned a reference to Integer object on the heap
+8. Bootstrap ClassLoader loads System class, toString() appears on the stack, println() appears on the stack
+9. Bootstrap ClassLoader loads String class, String object with value finished is created on the heap, println() appears on the stack
