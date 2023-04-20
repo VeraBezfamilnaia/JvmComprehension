@@ -26,7 +26,7 @@ Comments:
 and assigned a reference to Object object on the heap
 4. Bootstrap ClassLoader loads Integer class; object Integer with value 2 is created on the heap; variable ii of Integer type is created on the stack and assigned a reference to Integet object on the heap
 5. printAll() appears on the stack
-6.variables o of Object type, i of int type and ii of Integer type are created on the stack
-7.Integer object with value 700 is created on the heep; uselessVar of Integer type is created on the stack and assigned a reference to Integer object on the heap
+6. variables o of Object type, i of int type and ii of Integer type are created on the stack
+7. Integer object with value 700 is created on the heep; uselessVar of Integer type is created on the stack and assigned a reference to Integer object on the heap
 8. Bootstrap ClassLoader loads System class, toString() appears on the stack, println() appears on the stack
 9. Bootstrap ClassLoader loads String class, String object with value finished is created on the heap, println() appears on the stack
